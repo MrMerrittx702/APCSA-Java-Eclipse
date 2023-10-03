@@ -50,28 +50,30 @@ class Conditionals {
     //> use the NOT, XOR, AND, OR order of operations
 
     //> Truth tables allow us to see how these operators evaluate
-
+    
+    boolean eval;
+    
     //NOT (!)
-    !true; //False
-    !false; //True
-
+    System.out.println( !true  ); //False
+    System.out.println( !false ); //True
+ 
     //XOR (^) (exclusive or)
-    true ^ true; //False
-    true ^ false; //True
-    false ^ true; //True
-    false ^ false; //False
+    System.out.println(  true ^ true   ); //False
+    System.out.println(  true ^ false  ); //True
+    System.out.println( false ^ true   ); //True
+    System.out.println( false ^ false  ); //False
 
     //AND (&&)
-    true && true; //True
-    true && false; //False
-    false && true; //False
-    false &&  false; //False
+    System.out.println(  true && true    ); //True
+    System.out.println(  true && false   ); //False
+    System.out.println( false && true    ); //False
+    System.out.println( false &&  false  ); //False
 
     //OR (||)
-    true || true; //True
-    true || false; //True
-    false || true; //True
-    false || false; //False
+    System.out.println(  true || true   ); //True
+    System.out.println(  true || false  ); //True
+    System.out.println( false || true   ); //True
+    System.out.println( false || false  ); //False
 
     //> There are many ways you might see an boolean expression. Here are several examples:
     boolean expressionA = true && false; // Result: false
@@ -106,17 +108,17 @@ class Conditionals {
       //> De Morgan's Laws are a pair of fundamental rules in Boolean algebra and set theory that describe how to simplify logical expressions involving negations (NOT), conjunctions (AND), and disjunctions (OR) 
       //> 1. Negation of a Conjunction
       //> 2. Negation of a Disjunction
-      boolean a;
-      boolean b;
-      //> 1. Negation of a Conjunction
-      !(a && b) == !a || !b;
+      boolean a; boolean b;
+      
+      //>               1. Negation of a Conjunction
+      System.out.println(  !(a && b) == !a || !b );
 
-      //> 2. Negation of a Disjunction
-      !(a || b) == !a && !b;
+      //>               2. Negation of a Disjunction
+      System.out.println(  !(a || b) == !a && !b );
 
       //REMEMBER:
-      !(a && b) != !a && !b;
-      !(a || b) != !a || !b;
+      System.out.println( !(a && b) != !a && !b );
+      System.out.println( !(a || b) != !a || !b );
 
 
     //===============================================================================================================================================//
@@ -156,7 +158,7 @@ class Conditionals {
     //===============================================================================================================================================//
     // Chained Conditionals
       //> a chained conditional included multiple else if statments
-
+    boolean condition1; boolean condition2; boolean condition3; boolean condition4; boolean condition5;
     if(condition1){
       
     }
@@ -180,7 +182,7 @@ class Conditionals {
     //Nested Conditionals
       //> Conditionals can be placed inside of one another
 
-    boolean condition1 = true;boolean condition2 = true;boolean condition3 = false;
+    condition1 = true; condition2 = true; condition3 = false;
 
     if (condition1) {
         System.out.println("Condition 1 is true.");
