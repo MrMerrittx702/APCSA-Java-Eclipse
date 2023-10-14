@@ -4,6 +4,7 @@ import java.util.Scanner;
 import java.util.ArrayList;
 
 public class Main {
+  private static int typeSpeed = 30;
 
   public static void gameLoop(Player player) {
     Enemy slime = new Enemy();
@@ -25,20 +26,22 @@ public class Main {
       Enemy enemy = selectRandomEnemy(enemyList);
       enemy.appears();
       
+      
       while(enemy.getIsAlive() && player.getIsAlive()) {
-        System.out.println("|Curren Stats|" + player +" hp:" + player.getHealth() +"|" + enemy + " hp: " + enemy.getHealth() + "|");
-
+        System.out.println("===================================================");
+        System.out.println("|Current Stats | " + player +" hp: " + player.getHealth() +" | " + enemy + " hp: " + enemy.getHealth() + " |");
+        System.out.println("===================================================");
         Scanner scanner = new Scanner(System.in);
-        System.out.println("What would your like to do?\n 1) run  2) fight");
+        typeln("What would your like to do?\n 1) run  2) fight");
         int choice = scanner.nextInt();
 
         if (choice == 1) {
           if(player.run()) {
-            System.out.println("You got away this time...");
+            typeln("You got away this time...\n");
             break;
           }
           else {
-            System.out.println("Your path is blocked by the " + enemy);
+            typeln("Your path is blocked by the " + enemy + "\n");
           }
         } else if (choice == 2) {
           player.fight(enemy);
@@ -46,7 +49,7 @@ public class Main {
             break;
           }
         } else {
-          System.out.println("You can't do that right now!");
+          typeln("You can't do that right now!");
           nl();
         
         }
@@ -63,7 +66,7 @@ public class Main {
   }
   
   public static void gameOver() {
-    System.out.println("GAME OVER");
+    typeln("GAME OVER");
     return;
   }
 
@@ -75,23 +78,76 @@ public class Main {
   public static void nl() {
     System.out.println();
   }
+  
+  
+  public static void pause(int t_ms) {
+    try {
+      Thread.sleep(t_ms); // Sleep for 1 second
+    } catch (InterruptedException e) {
+      // Handle the exception
+    }
+  }
+  
+  public static void typeln(String str) {
+    for(int i = 0; i < str.length(); i++) {
+      if(i < str.length()-1 && str.substring(i,i+2).equals("\n")){
+        nl();
+        i++;
+      }
+      else {
+        System.out.print(str.substring(i,i+1));
+      }
+      pause(typeSpeed);
+    }
+    System.out.println();
+  }
+  
+public static void type(String str) {
+    for(int i = 0; i < str.length(); i++) {
+      if(i < str.length()-1 && str.substring(i,i+2).equals("\n")){
+        nl();
+        i++;
+      }
+      else {
+        System.out.print(str.substring(i,i+1));
+      }
+      pause(typeSpeed);
+    }
+  }
+
+public static String cleanInput(String str) {
+  String cleanStr = "";
+  for(int i = 0; i < str.length(); i++) {
+    if(str.substring(i,i+1).equals(" ")){
+      continue;
+    }
+    else {
+      cleanStr += str.substring(i,i+1);
+    }
+  }
+  return cleanStr;
+}
+  
+  
+  
+  
 
   public static void main(String[] args) {
-    System.out.println("Mr. Merritt Presents...\n    A Java Text Adventure!");
+    typeln("Mr. Merritt Presents...\n    A Java Text Adventure!");
 
     Scanner scanner = new Scanner(System.in);
 
-    System.out.println("Enter your name brave adventurer!: ");
+    typeln("Enter your name brave adventurer!: ");
 
-    String playerName = scanner.nextLine();
+    String playerName = cleanInput(scanner.nextLine());
 
     Player player1 = new Player(playerName);
 
     nl();
-    System.out.println("Welcome " + player1
+    typeln("Welcome " + player1
         + ", to the land of Programia!\nHere our lives are simple, every day we are attacked by numerous monsters until we die.\nWhen Progamia runs again we awaken to a new land, and a new cycle of deadly monster foes!");
-    System.out.println("And Your Adventure Begins!!!");
-    nl();
+    typeln("And Your Adventure Begins!!!\n");
+    
 
     gameLoop(player1);
 

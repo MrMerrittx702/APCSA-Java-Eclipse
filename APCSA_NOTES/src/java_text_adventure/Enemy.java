@@ -30,21 +30,21 @@ public class Enemy {
   }
 
   public void appears() {
-    System.out.println("Oh No! A " + this.name + " suddenly appears!");
+    Main.typeln("Oh No! A " + this.name + " suddenly appears!");
   }
 
   public void attack(Player player) {
-    System.out.println("The " + this.name + " attacks" + " and does " + this.damage + " point(s) of damage.");
+    Main.typeln("The " + this.name + " attacks" + " and does " + this.damage + " point(s) of damage.");
     player.takesDamage(this.damage);
   }
 
   public void takesDamage(int damage) {
-    System.out.println("The " + this.name + " recieves " + damage + " point(s) of damage!");
+    Main.typeln("The " + this.name + " recieves " + damage + " point(s) of damage!");
 
     this.health -= damage;
 
     if (this.health <= 0) {
-      System.out.println("The " + this.name + " is defeated!");
+      Main.typeln("The " + this.name + " is defeated!");
       this.isAlive = false;
     }
   }

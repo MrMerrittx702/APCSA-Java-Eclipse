@@ -57,12 +57,12 @@ public class Player {
   }
   
   public void takesDamage(int damage) {
-    System.out.println( this.name + " recieves " + damage + " point(s) of damage!");
+    Main.typeln( this.name + " recieves " + damage + " point(s) of damage!");
 
     this.health -= damage;
 
     if (this.health <= 0) {
-      System.out.println( this.name + " is defeated!");
+      Main.typeln( this.name + " is defeated!");
       this.isAlive = false;
     }
   }
