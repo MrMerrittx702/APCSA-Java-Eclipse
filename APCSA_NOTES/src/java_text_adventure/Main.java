@@ -7,6 +7,7 @@ public class Main {
   private static int typeSpeed = 30;
 
   public static void gameLoop(Player player) {
+    
     Enemy slime = new Enemy();
     Enemy slimeDuo = new Enemy("Slime Duo", 20, 4);
     Enemy slimeTrio = new Enemy("Slime Trio", 30, 6);
@@ -32,7 +33,7 @@ public class Main {
         System.out.println("|Current Stats | " + player +" hp: " + player.getHealth() +" | " + enemy + " hp: " + enemy.getHealth() + " |");
         System.out.println("===================================================");
         Scanner scanner = new Scanner(System.in);
-        typeln("What would your like to do?\n 1) run  2) fight");
+        typeln("What would you like to do?\n 1) run  2) fight");
         int choice = scanner.nextInt();
 
         if (choice == 1) {
@@ -82,9 +83,9 @@ public class Main {
   
   public static void pause(int t_ms) {
     try {
-      Thread.sleep(t_ms); // Sleep for 1 second
+      Thread.sleep(t_ms); 
     } catch (InterruptedException e) {
-      // Handle the exception
+      return;
     }
   }
   

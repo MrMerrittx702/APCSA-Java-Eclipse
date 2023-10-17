@@ -24,7 +24,7 @@ public class Enemy {
     this.isAlive = true;
   }
 
-  // overriden toString() method inherited from Object class
+  // overridden toString() method inherited from Object class
   public String toString() {
     return this.name;
   }
