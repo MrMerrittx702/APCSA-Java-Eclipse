@@ -32,9 +32,10 @@ public class Main {
 
   //GameMethods//////////////////////////////////////////////////////////////////////////////////////////////////////
   public static void gameLoop(Player player) {
-    ArrayList<Enemy> enemyList = createEnemyList();
+    //ArrayList<Enemy> enemyList = createEnemyList();
 
     while (player.getIsAlive()) {
+      ArrayList<Enemy> enemyList = createEnemyList();
       Enemy enemy = selectRandomEnemy(enemyList);
       enemy.appears();
 

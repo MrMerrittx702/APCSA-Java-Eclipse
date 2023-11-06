@@ -68,7 +68,7 @@ public class Player {
     String choice = Main.input();
     
   }
-  
+  ////////////////////////////////////////////////////////////////////////////
   public void takesDamage(int damage) {
     Main.typeln( this.name + " recieves " + damage + " point(s) of damage!");
 
@@ -79,7 +79,7 @@ public class Player {
       this.isAlive = false;
     }
   }  
-  
+  //////////////////////////////////////////////////////////////////////////////
   public void showItems() {
     println("What would you like to use?...");
     for(int i = 0; i < itemBag.size(); i++) {
