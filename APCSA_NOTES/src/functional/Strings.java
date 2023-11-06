@@ -180,7 +180,9 @@ public class Strings {
     //> returns a value of 0 if this is equal to other
     //> returns a value  > 0 is this is greater than other
     //> Lexicographically determines if one is greater than another
-      //> Using Unicode values it checks each value. If the unicode value of one is less then that string is less. 
+      //> Using Unicode values it checks each value. If the unicode value of one is less then that string is less.
+      //> If the strings are of different lengthes returns the difference between the two lengths (this - other). 
+      //> If the strings are the same length returns the difference between the characters decimal Unicode values( this - other ).
 
     str1 = "apple";
     str2 = "banana";
@@ -195,10 +197,18 @@ public class Strings {
         System.out.println(str1 + " is lexicographically equal to " + str2);
     }
     
+    //ascii table values to memorize
+      // 0 = 48
+      // A = 65
+      // a = 97
+    
     String a = "a"; //unicode 97
     String b = "b"; //unicode 98
     
     System.out.println( a.compareTo(b) ); //> returns -1
+    
+    System.out.println( "abc".compareTo("abcd")); //> returns -1
+    System.out.println("abc".compareTo("abe")); //> returns -2
 
     
   }
