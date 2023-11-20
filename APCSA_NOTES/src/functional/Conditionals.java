@@ -42,8 +42,9 @@ use the if keyword to begin and if statement
 
 class Conditionals {
   public static void main(String[] args){
-    //ignore this above for now, but make sure it is in every program you write or they will not work.
-    //see Methods.java for an explanation of the 'main' method
+  //ignore this above for now, but make sure it is in every program you write or they will not work.
+  //see Methods.java for an explanation of the 'main' method
+    
   //===============================================================================================================================================//
   // Boolean Expressions
     //> boolean expressions are like arithmetic expressions, but use boolean values (true/false)
