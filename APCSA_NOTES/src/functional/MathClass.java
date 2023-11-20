@@ -18,6 +18,7 @@ Notes:
   //> Calculating Random Range
   
   see java.lang.Math
+  test
 
 */
 
