@@ -108,7 +108,7 @@ class Conditionals {
       //> De Morgan's Laws are a pair of fundamental rules in Boolean algebra and set theory that describe how to simplify logical expressions involving negations (NOT), conjunctions (AND), and disjunctions (OR) 
       //> 1. Negation of a Conjunction
       //> 2. Negation of a Disjunction
-      boolean a; boolean b;
+      boolean a = true; boolean b = false;
       
       //>               1. Negation of a Conjunction
       System.out.println(  !(a && b) == !a || !b );
