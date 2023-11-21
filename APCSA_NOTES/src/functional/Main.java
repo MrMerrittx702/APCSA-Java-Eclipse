@@ -5,6 +5,7 @@ package functional;
 //single line comment
 //Comments are ignored by the compiler
 
+
 /* 
 Multi-
     Line
@@ -13,8 +14,9 @@ comments allow programmers to make notes about their code.
 It is good practice to make comments in your code so that you and others can understand the code. 
 */
 
+
 /** 
-   This is a javadoc comment. Javadoc comments are used for commenting an entire class or an entire method.
+ * This is a javadoc comment. Javadoc comments are used for commenting an entire class or an entire method.
  * They can be extracted into an HTML file using the JDK's javadoc command.
  * Must precede the class or the method header in order to be extracted to an HTML file.
 */
@@ -25,6 +27,7 @@ Notes:
 Covered in this file:
 //> Intro to Java
 //> First Program
+
 
 Java is a class based, object-oriented programming language
     Developed by Sun Microsystems in 1995.

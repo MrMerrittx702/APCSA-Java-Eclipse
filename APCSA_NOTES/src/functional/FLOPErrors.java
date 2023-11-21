@@ -34,8 +34,8 @@ class FLOPErrors{
     
     //> For Example
     double notPointThree = 0.2 + 0.1;
-    System.out.println(notPointThree == 0.3);//false ?...
-    System.out.println("0.2 + 0.1 = " + notPointThree);
+    System.out.println( notPointThree == 0.3 );//false ?...
+    System.out.println( "0.2 + 0.1 = " + notPointThree );
 
     //If you use a comparison operator with floating point numbers you may end up with an unintended error.
     
@@ -43,8 +43,8 @@ class FLOPErrors{
   // Decimal vs Binary values
     //>Lets look at how values are represented in decimal and in binary.
   
-    System.out.println("decimal ...|1000000|10000|10000|1000|100|10|1|.|1/10|1/100|1/1000|1/10000|1/100000|1/1000000|...");
-    System.out.println("binary  ...|   64  | 32  | 16  | 8  | 4 | 2|1|.|1/2 | 1/4 |  1/8 |  1/16 |  1/32  |   1/64  |...");
+    System.out.println( "decimal ...|1000000|10000|10000|1000|100|10|1|.|1/10|1/100|1/1000|1/10000|1/100000|1/1000000|..." );
+    System.out.println( "binary  ...|   64  | 32  | 16  | 8  | 4 | 2|1|.|1/2 | 1/4 |  1/8 |  1/16 |  1/32  |   1/64  |..." );
     
     /*
       0.2 (1/5) in decimal is simple: place a 2 in the 1/10 place
@@ -54,18 +54,18 @@ class FLOPErrors{
       The same issue exists in binary 1/5 is a infinitely repeating decimal number. 0.0011001100110011...
     */
     
-    System.out.println("0.4 + 0.1 = " + (0.4 + 0.1));
-    System.out.println("0.4 - 0.1 = " + (0.4 - 0.1));
+    System.out.println( "0.4 + 0.1 = " + (0.4 + 0.1) );
+    System.out.println( "0.4 - 0.1 = " + (0.4 - 0.1) );
     
     
     //other examples
-    System.out.println("0.7 + 0.1 = " + (0.7 + 0.1));
-    System.out.println("0.7 - 0.1 = " + (0.7 - 0.1));
-    //0.7 --> 0.101100110011001100...
+    System.out.println( "0.7 + 0.1 = " + (0.7 + 0.1) );
+    System.out.println( "0.7 - 0.1 = " + (0.7 - 0.1) );
+    //0.7 --> 0.101100110011001100... 
     //0.1 --> 0.000110011001100110...
 
-    System.out.println("0.9 - 0.1 = " + (0.9 - 0.1) );
-    System.out.println("0.9 + 0.1 = " + (0.9 + 0.1) );
+    System.out.println( "0.9 - 0.1 = " + (0.9 - 0.1) );
+    System.out.println( "0.9 + 0.1 = " + (0.9 + 0.1) );
     //0.9 --> 0.11100110011001100...
     //0.1 --> 0.00011001100110011...
 

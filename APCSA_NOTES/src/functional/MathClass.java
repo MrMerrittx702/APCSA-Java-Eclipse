@@ -16,6 +16,8 @@ Notes:
   //> Math class constants
   //> Math Class Methods
   //> Calculating Random Range
+  
+  see java.lang.Math
 
 */
 
@@ -25,28 +27,29 @@ class MathClass {
     //see Methods.java for an explanation of the 'main' method
 
   //===============================================================================================================================================//
-  //Java Math Class 
-    //> consists mainly of static methods for performing mathematical functions
-    //> there are 3 constant public values
-    //> does not have a public constructor (cannot create Math objects)
-
+  // Java Math Class 
+   //> consists mainly of static methods for performing mathematical functions
+   //> there are 3 constant public values
+   //> does not have a public constructor (cannot create Math objects)
+ 
 
 
   //===============================================================================================================================================//
-  //Math Class Constants
+  // Math Class Constants
     //> There are 3 public constants defined in the java math class
+   
 
     //pi
-    Math.PI; //> 3.141592653589793
+    System.out.println( Math.PI ); //> 3.141592653589793
 
     //tau
-    Math.TAU; //> 2.0 * Math.PI;
+    System.out.println( Math.TAU ); //> 2.0 * Math.PI;
 
     //Euler's Number
-    Math.E; //> 2.718281828459045
+    System.out.println( Math.E ); //> 2.718281828459045
 
   //===============================================================================================================================================//
-  //Math Class Methods
+  // Math Class Methods 
   
     // General methods for mathematical tasks
     Math.max(1,5); //> find the largest value
@@ -64,7 +67,7 @@ class MathClass {
     //apply your math skills to do more with the random() method.
     
   //===============================================================================================================================================//
-  //Calculating Random Range
+  // Calculating Random Range 
 
     int randomNum = (int)(Math.random() * 101); // random from 0 to 100
 
@@ -83,11 +86,8 @@ class MathClass {
 
     //why are these two different formulas necessary?
     
-    //check out the RandomRange.java file
+    //see also RandomRange.java file
     //-------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-    //For a complete list of the methods in the Math class checkout: https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/Math.html
   }
 }
 
