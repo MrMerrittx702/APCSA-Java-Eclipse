@@ -127,7 +127,7 @@ class Conditionals {
       //> conditionals are control flow statements that are used to run code based on a condition
       //> If statements are the most common conditional
       //> If statements use boolean expressions as conditions
-    boolean condition;
+    boolean condition = true;
 
     //If statement
     if (condition){
@@ -143,7 +143,7 @@ class Conditionals {
 
     }
     
-    boolean firstCondition; boolean secondCondition;
+    boolean firstCondition = false; boolean secondCondition = true;
     //If, else if, else
     if (firstCondition){
       //runs only if firstCondition is true
@@ -159,7 +159,8 @@ class Conditionals {
     //===============================================================================================================================================//
     // Chained Conditionals
       //> a chained conditional included multiple else if statments
-    boolean condition1; boolean condition2; boolean condition3; boolean condition4; boolean condition5;
+    boolean condition1 = false; boolean condition2 = false; boolean condition3 = false; boolean condition4 = false; boolean condition5 = false;
+    
     if(condition1){
       
     }
