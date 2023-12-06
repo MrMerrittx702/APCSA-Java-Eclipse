@@ -100,8 +100,9 @@ class ForLoops {
     
   //============================================================================================================================================================================//
   // For Each/Enhanced For Loops
-    //for each/enhanced for loops are a shorthand version of for loops
-    // these loops are used with iterables or objects that can be accessed in a sequential manner
+    //> for each/enhanced for loops are a shorthand version of for loops
+    //> for each loops use a copy of the element
+    //> these loops are used with iterables or objects that can be accessed in a sequential manner
     //> Iterable Examples:
       //> Strings
       //> Arrays

@@ -96,13 +96,13 @@ class Variables {
     String front = "Hello ";
     String back = "World";
     
-    System.out.println(x + y);
-    System.out.println(x * y);
-    System.out.println(x - y);
-    System.out.println(x / y);
-    System.out.println(x % y);
+    System.out.println( x + y );
+    System.out.println( x * y );
+    System.out.println( x - y );
+    System.out.println( x / y );
+    System.out.println( x % y );
     
-    System.out.println(front + back);  
+    System.out.println( front + back );  
   }
   
 //============================================================================================================================================================================//
