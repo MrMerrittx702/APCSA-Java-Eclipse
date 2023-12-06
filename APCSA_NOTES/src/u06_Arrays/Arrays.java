@@ -40,7 +40,7 @@ public class Arrays {
     //> Once created the size of an array is fixed.
     
     //> Array syntax
-      //> elementType[] identifier = [size];
+      //> elementType[] identifier = new elementType[size];
     
     //Declaring an array of n size
     int[] intArray =  new int[5]; //creates an array [0, 0, 0, 0, 0]
