@@ -82,8 +82,8 @@ class Wrappers {
   private static void unboxing(){
     Integer num = new Integer(10);
     int unbox = num;
-    System.out.println("Value of num: " + num);
-    System.out.println("Value of unbox: " + unbox);
+    System.out.println( "Value of num: " + num );
+    System.out.println( "Value of unbox: " + unbox );
 
     //manual unbox
     int manual = num.intValue();
@@ -130,9 +130,9 @@ class Wrappers {
     double duo = duoObj.doubleValue();
     char character = charObj.charValue();
 
-    System.out.print(num); System.out.println(": primitive int");
-    System.out.print(duo); System.out.println(": primitive double");
-    System.out.print(character); System.out.println(": primitive character");
+    System.out.print(num); System.out.println( ": primitive int" );
+    System.out.print(duo); System.out.println( ": primitive double" );
+    System.out.print(character); System.out.println( ": primitive character" );
   }
 
   /** an example that incorporates Autoboxing/Unboxing */
