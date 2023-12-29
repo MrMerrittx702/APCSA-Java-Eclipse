@@ -29,7 +29,7 @@ Notes:\
 
 
 //There are two ways to implement the binary search algorithm
-package u07_ArrayLists;
+package u07_ArrayLists.searchAlgorithms;
 
 import java.util.Scanner;//import Scanner class to accept user input.
 

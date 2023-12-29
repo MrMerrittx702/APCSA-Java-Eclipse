@@ -21,7 +21,7 @@ Insertion sort steps
 3. Insert the value into its correct spot
 
 */
-package u07_ArrayLists;
+package u07_ArrayLists.sortAlgorithms;
 
 import java.util.Random;
 

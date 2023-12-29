@@ -17,7 +17,7 @@ Notes:
   2. Partition values > pivot to the right and < pivot to the left.
   3. Recursively quicksort the values left and right of the pivot.
 */
-package u07_ArrayLists;
+package u07_ArrayLists.sortAlgorithms;
 
 import java.util.Random;
 

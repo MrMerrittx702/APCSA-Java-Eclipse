@@ -19,7 +19,7 @@ Notes:
   1. Split array in 2
 
 */
-package u07_ArrayLists;
+package u07_ArrayLists.sortAlgorithms;
 
 import java.util.Random;
 

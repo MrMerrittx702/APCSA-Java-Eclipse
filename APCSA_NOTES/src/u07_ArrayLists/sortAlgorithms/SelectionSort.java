@@ -7,7 +7,7 @@ This file is meant to highlight the code and what it is doing.
 You should not choose class, object, method, or variable names 
 the way this file does. 
 */
-package u07_ArrayLists;
+package u07_ArrayLists.sortAlgorithms;
 
 /**
 Notes:

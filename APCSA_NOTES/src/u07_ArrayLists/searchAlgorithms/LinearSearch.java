@@ -18,7 +18,7 @@ Notes:
   If an array is sorted binary search is more efficient than linear search for finding an element in an array.
   For larger arrays sorting the array then using binary search is more effiecient than using a linear search. 
 */
-package u07_ArrayLists;
+package u07_ArrayLists.searchAlgorithms;
 
 import java.util.Scanner;//for taking user input
 
