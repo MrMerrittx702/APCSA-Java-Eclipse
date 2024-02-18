@@ -52,18 +52,18 @@ class BinarySearch {
   }
 //ITERATION-------------------------------------------------------------------------------------------------------------------------------------
   private static int iterBinSearch(int[] array, int searchedElement){//iterative binary search
-    int pointer = 0;
-    int lastIndex = array.length -1;
+    int startIndex = 0;
+    int endIndex = array.length -1;
 
-    while (pointer <= lastIndex){
-      int middleIndex = (pointer + lastIndex) / 2;//divide array in half
+    while (startIndex <= endIndex){
+      int middleIndex = (startIndex + endIndex) / 2;//divide array in half
       if(array[middleIndex] == searchedElement){//check if the middle value is the searched value
         System.out.println("Iterative Binary Search: \n" + searchedElement + " found at index: " + middleIndex);
         return middleIndex;
       }else if(array[middleIndex] < searchedElement){//check if value is larger than the middle value
-        pointer = middleIndex + 1;
+        startIndex = middleIndex + 1;
       }else if (array[middleIndex] > searchedElement){//check if value is smaller than the middle value
-        lastIndex = middleIndex -1;
+        endIndex = middleIndex -1;
       }
     }
     System.out.println("Iterative Binary Search: \n" + searchedElement + "not found");
@@ -71,10 +71,10 @@ class BinarySearch {
   }
 //-----------------------------------------------ends here--------------------------------------------------------------------------------------
 //RECURSION-------------------------------------------------------------------------------------------------------------------------------------
-  private static int recurBinSearch(int[] array, int firstIndex, int lastIndex, int searchedElement){
+  private static int recurBinSearch(int[] array, int startIndex, int endIndex, int searchedElement){
     //end case (avoid infinite recursion!!!)
-    if (lastIndex >= firstIndex){
-      int middleIndex = firstIndex + (lastIndex - firstIndex)/2;//divide array in half
+    if (endIndex >= startIndex){
+      int middleIndex = startIndex + (endIndex - startIndex)/2;//divide array in half
 
       if (array[middleIndex] == searchedElement){//check if middle value is the searched value
         System.out.println("Recursive Binary Search: \n" + searchedElement + " found at index: " + middleIndex);
@@ -83,14 +83,17 @@ class BinarySearch {
 
       if (array[middleIndex] > searchedElement){//check if the middle value is larger than the searched element
         //recursive call of search from first index to the middle index - 1(first half) (original array)
-        return recurBinSearch(array, firstIndex, middleIndex - 1, searchedElement);
+        return recurBinSearch(array, startIndex, middleIndex - 1, searchedElement);
       }
       //else recursive call of search from middle index + 1 to the last index (second half) (original array)
-      return recurBinSearch(array, middleIndex + 1, lastIndex, searchedElement);
+      return recurBinSearch(array, middleIndex + 1, endIndex, searchedElement);
     }
     System.out.println("Recursive Binary Search: \n" +searchedElement + "not found");
     return -1; //value not found
   }
+  
+  
+  
 //-------------------------------------------ends here------------------------------------------------------------------------------------------
   private static int[] makeArray(int arraySize){//make an array of n length with values from 0 to n - 1 in numberical order
     int[] array = new int[arraySize];

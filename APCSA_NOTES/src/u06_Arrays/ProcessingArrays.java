@@ -327,7 +327,7 @@ class ProcessingArrays{
   }
   
 //============================================================================================================================================================================//
-//Every nth elemen
+//Every nth element
   //> choose a start index
   //> choose a stop index
   //> step by +1 or more

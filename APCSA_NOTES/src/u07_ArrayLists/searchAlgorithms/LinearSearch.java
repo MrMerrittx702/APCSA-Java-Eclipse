@@ -44,7 +44,7 @@ class LinearSearch {
   private static int linearSearch(int[] numbers, int searchedElement){
     for (int spot = 0; spot < numbers.length; spot++){
       if(numbers[spot] == searchedElement){
-        System.out.print(searchedElement + " found at index: ");
+        System.out.print(searchedElement + " found at index: " + spot);
         return spot;
       }
     }
