@@ -35,7 +35,7 @@ class Variables {
   //> a name that has a value that can change (vary)
   //> The memory that associated with a variable holds the literal value of primitive data. 
   //> Variables that hold the same string value reference the same location in memory (called interning)
-  //> Variables have default values when declared, but no initialized.
+  //> Variables have default values when declared, but not initialized.
 
 //============================================================================================================================================================================//
 // Variable Naming Rules
@@ -80,7 +80,7 @@ class Variables {
     //or one value to multiple variables
     a = b = c = 100;
     
-    //aliases
+    //aliases are an alternative name or reference for a variable
     int num1 = num;
     int num2 = num1;
     int num3 = num2;

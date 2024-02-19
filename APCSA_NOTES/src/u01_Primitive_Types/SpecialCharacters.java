@@ -31,7 +31,7 @@ class SpecialCharacters {
     //use \n  for a newline
     System.out.println("Print on a \n newline.");
     
-    // \r carriage return (resets the posistion to the beginning of a line of text)
+    // \r carriage return (resets the position to the beginning of a line of text)
     System.out.println("beginning of the line \r Print at the ");
     
     // \t Tab (inserts a tab)

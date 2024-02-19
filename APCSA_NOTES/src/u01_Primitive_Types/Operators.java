@@ -27,7 +27,7 @@ class Operators {
     
     //============================================================================================================================================================================//
     // Java Operations
-      //> all expressions are evalueated to produce a single value
+      //> all expressions are evaluated to produce a single value
       //> the value of an expression has a type based on the evalutaiton of the expression
       //> operators in java follow operator precedence
       //> and now the math begins...
@@ -166,7 +166,7 @@ class Operators {
       //> ! NOT (Negation)
       //> ^ bitwise XOR
       //> && logical AND (Conjunction)
-      //> || logical OR (DIsjunction)
+      //> || logical OR (Disjunction)
     
       //> Truth tables allow us to see how these operators evaluate
     
@@ -210,7 +210,7 @@ class Operators {
       // 4 ! (not)
       // 5 *,/,% Multiplication, Division, and Modulus(remainder)
       // 6 +,- Binary addition and subtraction concatenation from left to right
-      // 7 <,<=,>,>= (Comparison/Relational)
+      // 7 <,<=,>,>=, instanceof (Comparison/Relational)
       // 8 ==, != (Equality)
       // 9 ^ (XOR)
       // 10 && (And)
