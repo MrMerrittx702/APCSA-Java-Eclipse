@@ -39,6 +39,29 @@ class BubbleSort {
     }
     bubbleSort(arr, n-1); //recursive call for next pass
   }
+  
+  public static void bubbleSort(int[] array) {
+
+	boolean swapped = true;
+
+		while (swapped) {
+			swapped = false;
+
+			for (int i = 0; i < array.length - 1; i++) {
+				if (array[i] > array[i + 1]) {
+					swapped = true;
+					swap(array, i, i + 1);
+				}
+			}
+
+		}
+	}
+  
+	public static void swap(int[] array, int indexA, int indexB) {
+		int temp = array[indexA];
+		array[indexA] = array[indexB];
+		array[indexB] = temp;
+	}
 
   static void printArray(int arr[]){
     for (int i = 0; i < arr.length; ++i){
