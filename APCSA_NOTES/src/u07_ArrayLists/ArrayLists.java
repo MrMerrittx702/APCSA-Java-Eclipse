@@ -102,6 +102,7 @@ class ArrayLists {
   //============================================================================================================================================================================//
   // ArrayList Methods
     //> add() > adds an element to the end of the ArrayList
+    //> add(<index>, <value>) > add and element to the given index and shifts values to the right.
     //> get(<index>) > returns the element at index
     //> set(<index>, <value>) > changes the element at index to value
     //> remove(<index>) > removes the value at index and shifts remaining values left one index, returns the removed value
@@ -116,6 +117,10 @@ class ArrayLists {
     list.add("added to index 3");
     list.add("added to index 4");
     
+    //add(<index>, <value>)
+    list.add(0,"This is added at index 0, the other values are shifted to the right");
+    
+    
 
     //the ArrayList class has the get(); method to access an element
     //list.get(<index>);
@@ -127,6 +132,8 @@ class ArrayLists {
    
     //the ArrayList class has the remove(); method to remove and element
     list.remove(0);
+    
+    String returned = list.remove(0); // the remove method also returns the value that was removed.
    
     //the ArrayList class has the size(); method to output the number of elements (similiar to length and length());
     //list.size();

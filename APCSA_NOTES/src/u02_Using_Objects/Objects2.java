@@ -29,7 +29,7 @@ public class Objects2{
       //Object Instantiation from another class
         //> If you can access the class you are trying to create an object of, then nothing changes. 
 
-        Objects anotherClassObject = new Objects();
+        Objects anotherClassObj = new Objects();
 
         //Zero parameter/argument constructor
         Objects anotherDefaultObj = new Objects();//No args constructor
@@ -54,8 +54,16 @@ public class Objects2{
       //============================================================================================================================================================================//
       //Accessing Instance Variables and Static Fields from another class
       //Note this will only work if the fields in the Objects class are not private
-
-      //Accessing Class Attributes from another class (in this case Objects)
+        
+      //Accessing object attributes
+      System.out.println(anotherClassObj.num);
+      System.out.println(anotherClassObj.bool);
+      System.out.println(anotherClassObj.duo);
+      System.out.println(anotherClassObj.str);
+      System.out.println(anotherClassObj.strArray); // prints memory location
+      System.out.println(anotherClassObj.strList);
+        
+      //Accessing static feilds from another class (in this case Objects)
       System.out.println(anotherClassObj.staticNum);     
       System.out.println(anotherClassObj.staticBool);
       System.out.println(anotherClassObj.staticDuo);
@@ -71,13 +79,7 @@ public class Objects2{
       System.out.println(Objects.staticStrList);
 
       
-      //Accessing object attributes
-      System.out.println(anotherClassObj.num);
-      System.out.println(anotherClassObj.bool);
-      System.out.println(anotherClassObj.duo);
-      System.out.println(anotherClassObj.str);
-      System.out.println(anotherClassObj.strArray); //prints memory location
-      System.out.println(anotherClassObj.strList);
+      
       
 
       //============================================================================================================================================================================//
