@@ -25,7 +25,7 @@ public class Arrays2d {
     
     //> Declaring of n size
     int[][] array2d = new int[2][3];
-    //aray 2d is an array of length 2 that stores an array of length 3 in each element
+    //array 2d is an array of length 2 that stores an array of length 3 in each element
    
   //============================================================================================================================================================================//
   // Using an array initializer
@@ -65,7 +65,7 @@ public class Arrays2d {
   //============================================================================================================================================================================//     
   //Array of Arrays using rows and columns
     //> a 2d array is an array that stores arrays
-    //> it is often easier to think of as rows and colums
+    //> it is often easier to think of as rows and columns
     
     // 5 x 5 2d Array
     //This array stores elements that represent the index pair they are stored in. 
@@ -74,7 +74,7 @@ public class Arrays2d {
         {"[1][0]", "[1][1]", "[1][2]", "[1][3]", "[1][4]"}, //> 1
         {"[2][0]", "[2][1]", "[2][2]", "[2][3]", "[2][4]"}, //> 2 row indexes
         {"[3][0]", "[3][1]", "[3][2]", "[3][3]", "[3][4]"}, //> 3
-        {"[4][0]", "[4][1]", "[4][2]", "[4][3]", "[4][4]"}, //> 4
+        {"[4][0]", "[4][1]", "[4][2]", "[4][3]", "[4][4]"} 	//> 4
    //         0         1         2         3         4
    //>                       column indexes
     }; 

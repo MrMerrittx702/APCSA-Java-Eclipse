@@ -215,7 +215,7 @@ Method Syntax
 
 //============================================================================================================================================================================//
 // Overridden Methods
-    //> overridden methods are methods inherited from another class that are given a different implimentation
+    //> overridden methods are methods inherited from another class that are given a different implementation
     //> commonly overridden methods include equals() and toString() from the 'Object' class
     //> overridden methods must have the same signature(returnType methodName (list of Formal Parameters))
 
