@@ -31,8 +31,10 @@ class BubbleSort {
     } //passes are done
 
     for (int i =0; i<n-1; i++){//iteration through unsorted elements
+    	
       if (arr[i] > arr[i+1]){//check if the elements are in order
-        int temp = arr[i];//if not swap them
+        
+    	int temp = arr[i];//if not swap them
         arr[i] =arr[i+1];
         arr[i+1] = temp;
       }

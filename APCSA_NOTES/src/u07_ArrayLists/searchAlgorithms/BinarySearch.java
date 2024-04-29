@@ -83,7 +83,7 @@ class BinarySearch {
 
       if (array[middleIndex] > searchedElement){//check if the middle value is larger than the searched element
         //recursive call of search from first index to the middle index - 1(first half) (original array)
-        return recurBinSearch(array, startIndex, middleIndex - 1, searchedElement);
+        return recurBinSearch(array, startIndex, middleIndex - 1, searchedElement); 
       }
       //else recursive call of search from middle index + 1 to the last index (second half) (original array)
       return recurBinSearch(array, middleIndex + 1, endIndex, searchedElement);
