@@ -43,9 +43,6 @@ class MathClass {
     //pi
     System.out.println( Math.PI ); //> 3.141592653589793
 
-    //tau
-    System.out.println( Math.TAU ); //> 2.0 * Math.PI;
-
     //Euler's Number
     System.out.println( Math.E ); //> 2.718281828459045
 

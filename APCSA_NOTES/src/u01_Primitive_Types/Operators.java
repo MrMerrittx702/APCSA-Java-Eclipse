@@ -201,22 +201,30 @@ class Operators {
     
     
     //============================================================================================================================================================================//
-    //Operator Precedence
-      //> Generally Arithmetic, then Relational, then Logical, then Assignment.
-      //> From first to last: (In general think PEMDAS)
-      // 1 var++ and var--
-      // 2 ++var and --var
-      // 3 (type) (casting)
-      // 4 ! (not)
-      // 5 *,/,% Multiplication, Division, and Modulus(remainder)
-      // 6 +,- Binary addition and subtraction concatenation from left to right
-      // 7 <,<=,>,>=, instanceof (Comparison/Relational)
-      // 8 ==, != (Equality)
-      // 9 ^ (XOR)
-      // 10 && (And)
-      // 11 || (Or)
-      // 12 =,+=,-=,*=,/=,%= (Assignment)
-     
+	// From first to last: (In general think PEMDAS)
+	//*Operators at the same level proceed from left to right unless indicated below*
+	//* 1 (), [], new, . , :: 
+	//* 2 var++ and var--
+	//* 3 (right to left)
+	//    * unary + or - (automatic conversion to int when type is byte, char, or short)
+	//    * unary ! logical NOT
+	//    * unary ~ Bitwise NOT
+	//    * ++var and --var
+	//* 4 (type) Casting (right to left)
+	//* 5 *, /, % Multiplication, Division, and Modulus (remainder)
+	//* 6 +, - Binary addition and subtraction concatenation 
+	//* 7 <<, >>, >>> Binary Shifts
+	//* 8 <, <=, >, >=, instanceof (Comparison/Relational)
+	//* 9 ==, != (Equality)
+	//* 10 & Bitwise AND
+	//* 11 ^ Bitwise XOR
+	//* 12 | Bitwise OR
+	//* 13 && Logical AND
+	//* 14 || (Or)
+	//* 15 ? : (Ternary Conditional)
+	//* 16 =, +=, -=, *=, /=, %= (Assignment) (right to left)
+	//* 17 -> Lambda or Switch Expression (right to left)
+	//     
   }
 }
 
