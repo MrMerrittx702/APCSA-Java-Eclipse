@@ -45,7 +45,7 @@ class Wrappers {
       //> Nullable Values (objects can be null primitives cannot)
       //> Methods, wrapper classes provide methods for converting, parsing, and performing operations not available for primitive types
 
-    Integer num = new Integer();
+    Integer num = new Integer(9);
     Double duo = new Double();
     Boolean bool = new Boolean();
     Byte bit = new Byte();
